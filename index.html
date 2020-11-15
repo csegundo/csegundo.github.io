@@ -24,12 +24,51 @@
     <link rel="icon" href="resources/images/logo_512.svg">
     <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- <script src="js/header.js"></script> -->
     <script src="js/index.js"></script>
     <script src="js/popup.js"></script>
 
     <title>csegundo | Home</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://csegundo.github.io"><img src="resources/images/logo_512.svg" class="navbar-logo"> csegundo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-question" aria-hidden="true"></i> Sobre mí</a>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-creative-commons" aria-hidden="true"></i> Licencia</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false"><i class="fa fa-download" aria-hidden="true"></i> Descargas</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Guía entrevistas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Documentación</a>
+                        </div>
+                    </li-->
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar...">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
     <div class="alert alert-info" role="alert">Hola a todos! Esta web se encuentra actualmente en construcción!</div>
 
     <div class="web-version">v1.0</div>
