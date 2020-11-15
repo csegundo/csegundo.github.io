@@ -3,12 +3,16 @@ let _popup = {
     close_msg: 'Cerrar',
 
     create: function(wrapper, title, icon){
+        if(icon)
+            icon = `<i class="fa fa-${icon}"></i> `;
+        else icon = '';
+
         var popup_main = `<div class="popup"></div>`,
             popup_content = `<div class="popup-content"></div>`,
             popup_header =
             `<div class="popup-header">
-                <span class="title">${title}</span>
-                <span class="popup-close" title="${_popup.close_msg}"><i class="fa fa-${icon}"></i></span>
+                <span class="title">${icon}${title}</span>
+                <span class="popup-close" title="${_popup.close_msg}"><i class="fa fa-times"></i></span>
             </div>`,
             popup_body = `<div class="popup-body"></div>`,
             popup_footer =
@@ -29,7 +33,7 @@ let _popup = {
             _popup.close(_popup.popup_element);
         });
 
-        return _popup.popup_element;
+        return _popup.popup_element.find('.popup-body');
     },
 
     close: function(wrapper){
