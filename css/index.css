@@ -26,3 +26,18 @@ body{
     font-size: 10px;
     cursor: pointer;
 }
+
+.explication{
+    margin-top: 10px;
+}
+.tool-name{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.tool{
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}

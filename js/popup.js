@@ -1,11 +1,27 @@
 let _popup = {
-    popup_element: '',
-    close_msg: 'Cerrar',
+    popup_element   : '',
+    close_msg       : 'Cerrar',
+    accept_msg      : 'Aceptar',
+    update_msg      : 'Actualizar',
 
-    create: function(wrapper, title, icon){
+    create: function(wrapper, title, icon, actions){
         if(icon)
             icon = `<i class="fa fa-${icon}"></i> `;
         else icon = '';
+
+        var btns = '';
+        $.each(actions, function(i, action){
+            switch(action){
+                case 'close'    :
+                    btns += `<button class="btn btn-danger btn-sm btn-close_popup"><i class="fa fa-times"></i> ${_popup.close_msg}</button>`; break;
+                case 'accept'   :
+                    btns += `<button class="btn btn-success btn-sm btn-accept"><i class="fa fa-check"></i> ${_popup.accept_msg}</button>`; break;
+                case 'update'   :
+                    btns += `<button class="btn btn-info btn-sm btn-update"><i class="fa fa-arrow-up"></i> ${_popup.update_msg}</button>`; break;
+                default         :
+                btns += `<button class="btn btn-primary btn-sm btn-${action}"><i class="fa fa-times"></i> ${action}</button>`; break;
+            }
+        });
 
         var popup_main = `<div class="popup"></div>`,
             popup_content = `<div class="popup-content"></div>`,
@@ -17,7 +33,7 @@ let _popup = {
             popup_body = `<div class="popup-body"></div>`,
             popup_footer =
             `<div class="popup-actions">
-                <button class="btn btn-danger btn-sm btn-close_popup"><i class="fa fa-times "></i>${_popup.close_msg}</button>
+                ${btns}
             </div>`;
 
         // put popup HTML

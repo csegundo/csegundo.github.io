@@ -21,20 +21,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- FILES -->
-    <link rel="icon" href="resources/images/logo_512.svg">
-    <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="../../resources/images/logo_512.svg">
+    <link rel="stylesheet" href="../../css/utils.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/header.css">
     <!-- <script src="js/header.js"></script> -->
-    <script src="js/index.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/popup.js"></script>
 
     <title>csegundo | Home</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="https://csegundo.github.io"><img src="resources/images/logo_512.svg" class="navbar-logo"> csegundo</a>
+            <a class="navbar-brand" href="https://csegundo.github.io"><img src="../../resources/images/logo_512.svg" class="navbar-logo"> csegundo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
             aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,7 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                         aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i> Herramientas</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="views/tools/encode_decode.html">URL encode-decode</a>
+                            <a class="dropdown-item" href="views/tools/encode_decode.html">URL/Base64 encode-decode</a>
                             <!-- <div class="dropdown-divider"></div> -->
                             <!-- <a class="dropdown-item" href="views/tools/base64encode.html">Base 64 encode-decode</a> -->
                         </div>
@@ -69,7 +69,38 @@
         </nav>
     </header>
 
-    <div class="alert alert-info" role="alert">Hola a todos! Esta web se encuentra actualmente en construcción!</div>
+    <div class="container">
+        <p class="explication">
+            A continuación encontrarás dos Herramientas muy útiles en el desarrollo de páginas web así como de peticiones
+            a servidores..... mucho texto
+        </p>
+    </div>
+
+    <div class="container">
+        <span class="tool-name">RAW URL encode-decode</span>
+        <div class="tool">
+            <div class="form-content">
+                <span class="form-title">Introduce un texto, palabras, URLs...</span>
+                <input type="text" class="form-control form-field" placeholder="Escribe aquí..." name="url-encode_decode">
+            </div>
+            <div class="form-btns">
+                <button class="btn btn-primary btn-url" data-type="encode" data-action="url"><i class="fa fa-file-archive-o"></i> Encode</button>
+                <button class="btn btn-primary btn-url" data-type="decode" data-action="url"><i class="fa fa-file-code-o"></i> Decode</button>
+            </div>
+        </div>
+
+        <span class="tool-name">Base64 encode-decode</span>
+        <div class="tool">
+            <div class="form-content">
+                <span class="form-title">Introduce un encodear</span>
+                <input type="text" class="form-control form-field" placeholder="Escribe aquí..." name="base64-encode_decode">
+            </div>
+            <div class="form-btns">
+                <button class="btn btn-primary btn-base64" data-type="encode" data-action="base64"><i class="fa fa-file-archive-o"></i> Encode</button>
+                <button class="btn btn-primary btn-base64" data-type="decode" data-action="base64"><i class="fa fa-file-code-o"></i> Decode</button>
+            </div>
+        </div>
+    </div>
 
     <div class="web-version">v1.0</div>
 </body>

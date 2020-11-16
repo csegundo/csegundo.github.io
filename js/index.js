@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     $('.web-version').click(function(){
         var title = 'Información sobre la versión de la página';
-        var popup = _popup.create($('body'), title, 'info-circle');
+        var popup = _popup.create($('body'), title, 'info-circle', ['close']);
         var content = 
         `<span>${_web_version.description}.<br><br>
         Cambios recientes realizados en la página web:</span><br>
@@ -18,5 +18,26 @@ $(document).ready(function(){
         </ul>`;
 
         popup.html(content);
+    });
+
+    let _encoders = {
+        base64  : function(encode, text){
+            return encode ? btoa(text) : atob(text);
+        },
+        url     : function(encode, text){
+            return encode ? encodeURIComponent(text) : decodeURIComponent(text);
+        }
+    };
+
+    $('.btn-base64,.btn-url').click(function(){
+        var btn     = $(this),
+            action  = btn.data().action,
+            type    = btn.data().type,
+            text    = '';
+        switch(action){
+            case 'url'      : text = $('input[name=url-encode_decode]'); break;
+            case 'base64'   : text = $('input[name=base64-encode_decode]'); break;
+        }
+        $(text).val(_encoders[`${action}`](type == 'encode', $(text).val()));
     });
 });
