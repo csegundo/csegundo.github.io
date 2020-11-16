@@ -22,14 +22,14 @@
 
     <!-- FILES -->
     <link rel="icon" href="../../resources/images/logo_512.svg">
-    <link rel="stylesheet" href="../../css/utils.css">
     <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/utils.css">
     <link rel="stylesheet" href="../../css/header.css">
     <!-- <script src="js/header.js"></script> -->
     <script src="../../js/index.js"></script>
     <script src="../../js/popup.js"></script>
 
-    <title>csegundo | Home</title>
+    <title>Tools - Encoding | csegundo</title>
 </head>
 <body>
     <header>
@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-question" aria-hidden="true"></i> Sobre mí</a>
@@ -71,17 +71,16 @@
 
     <div class="container">
         <p class="explication">
-            A continuación encontrarás dos Herramientas muy útiles en el desarrollo de páginas web así como de peticiones
-            a servidores..... mucho texto
+            La codificación "<em>Percent Encoding</em>", también conocida como <em>Codificación de porcentaje</em> o <em>de URL</em>, es un método para codificar
+            datos en un URI utilizando únicamente los caracteres ASCII legales dentro de un URI. Existen unos caracteres reservados (caracteres que
+            tiene un propósito reservado) como el sigo "<code>/</code>" que suele ser usado para especificar una ruta en un URI; o el caracter
+            "<code>%</code>", que es usado para esta codificación por lo que tiene que codificarse, en concreto su codificación es "<code>%25</code>".
         </p>
-    </div>
-
-    <div class="container">
         <span class="tool-name">RAW URL encode-decode</span>
         <div class="tool">
             <div class="form-content">
                 <span class="form-title">Introduce un texto, palabras, URLs...</span>
-                <input type="text" class="form-control form-field" placeholder="Escribe aquí..." name="url-encode_decode">
+                <textarea class="form-control form-field" placeholder="Escribe aquí..." name="url-encode_decode"></textarea>
             </div>
             <div class="form-btns">
                 <button class="btn btn-primary btn-url" data-type="encode" data-action="url"><i class="fa fa-file-archive-o"></i> Encode</button>
@@ -89,11 +88,18 @@
             </div>
         </div>
 
+        <p class="explication mt-20">
+            <em>Base64</em> es un sistema de numeración posicional (sistema en el cual cada dígito posee un valor que depende de su posición
+            relativa, la cual está determinada por la base, que es el número de dígitos necesarios para escribir cualquier número) que usa el número
+            64 como base. Es la mayor potencia que puede ser representada usando únicamente los caracteres imprimibles de ASCII. Esto ha propiciado
+            su uso para codificación de correos electrónicos, entre otras aplicaciones. Usa el rango de caracteres <code>[a-z]</code>,
+            <code>[A-Z]</code> y <code>[0-9]</code> para los 62 primeros dígitos, siendo los 2 últimos símbolos que varían de una variante a otra.
+        </p>
         <span class="tool-name">Base64 encode-decode</span>
         <div class="tool">
             <div class="form-content">
-                <span class="form-title">Introduce un encodear</span>
-                <input type="text" class="form-control form-field" placeholder="Escribe aquí..." name="base64-encode_decode">
+                <span class="form-title">Introduce una palabra o varias palabras</span>
+                <textarea class="form-control form-field" placeholder="Escribe aquí..." name="base64-encode_decode"></textarea>
             </div>
             <div class="form-btns">
                 <button class="btn btn-primary btn-base64" data-type="encode" data-action="base64"><i class="fa fa-file-archive-o"></i> Encode</button>

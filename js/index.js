@@ -22,7 +22,11 @@ $(document).ready(function(){
 
     let _encoders = {
         base64  : function(encode, text){
-            return encode ? btoa(text) : atob(text);
+            try{
+                return encode ? btoa(text) : atob(text);
+            } catch(error){
+                return text;
+            }
         },
         url     : function(encode, text){
             return encode ? encodeURIComponent(text) : decodeURIComponent(text);
@@ -35,8 +39,8 @@ $(document).ready(function(){
             type    = btn.data().type,
             text    = '';
         switch(action){
-            case 'url'      : text = $('input[name=url-encode_decode]'); break;
-            case 'base64'   : text = $('input[name=base64-encode_decode]'); break;
+            case 'url'      : text = $('textarea[name=url-encode_decode]'); break;
+            case 'base64'   : text = $('textarea[name=base64-encode_decode]'); break;
         }
         $(text).val(_encoders[`${action}`](type == 'encode', $(text).val()));
     });
