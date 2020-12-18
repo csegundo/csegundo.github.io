@@ -25,6 +25,10 @@ body{
     background-color: #dddddd;
     font-size: 10px;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .explication{

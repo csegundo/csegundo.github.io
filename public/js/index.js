@@ -1,6 +1,6 @@
 $(document).ready(function(){
     let _web_version = {
-        v           : "v1.0",
+        v           : "v1.0.1",
         description : "Esta es la primera versión de csegundo.github.io"
     };
 
