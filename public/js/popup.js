@@ -48,9 +48,6 @@ let _popup = {
         _popup.popup_element.on('click', '.popup-close,.btn-close_popup', function(){
             _popup.close(_popup.popup_element);
         });
-        _popup.popup_element.click(function(){
-            _popup.close(_popup.popup_element);
-        });
 
         return _popup.popup_element.find('.popup-body');
     },

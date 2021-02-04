@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -21,20 +21,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- FILES -->
-    <link rel="icon" href="resources/images/logo_512.svg">
+    <link rel="icon" href="public/resources/images/logo_512.svg">
     <link rel="stylesheet" href="public/css/utils.css">
     <link rel="stylesheet" href="public/css/index.css">
     <link rel="stylesheet" href="public/css/header.css">
     <!-- <script src="js/header.js"></script> -->
     <script src="public/js/index.js"></script>
     <script src="public/js/popup.js"></script>
+    <script src="public/js/alerts.js"></script>
 
     <title>Home | csegundo</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="https://csegundo.github.io"><img src="resources/images/logo_512.svg" class="navbar-logo"> csegundo</a>
+            <a class="navbar-brand" href="https://csegundo.github.io"><img src="public/resources/images/logo_512.svg" class="navbar-logo"> csegundo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
             aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +56,7 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                         aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i> Herramientas</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="tools/encoders/index.html">URL/Base64 encode-decode</a>
+                            <a class="dropdown-item" href="tools/encoders/">URL/Base64 encode-decode</a>
                             <!-- <div class="dropdown-divider"></div> -->
                             <!-- <a class="dropdown-item" href="views/tools/base64encode.html">Base 64 encode-decode</a> -->
                         </div>
@@ -71,6 +72,12 @@
 
     <div class="alert alert-info" role="alert">Hola a todos! Esta web se encuentra actualmente en construcción!</div>
 
-    <div class="web-version"></div>
+    <!-- <div class="web-version"></div> -->
+
+    <button class="btn btn-primary bt-alert">Alerta aqui</button>
+
+    <!-- <div class="slide-alert success">
+        asd as das d
+    </div> -->
 </body>
 </html>

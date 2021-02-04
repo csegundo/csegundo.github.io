@@ -44,4 +44,8 @@ $(document).ready(function(){
         }
         $(text).val(_encoders[`${action}`](type == 'encode', $(text).val()));
     });
+
+    $('.bt-alert').click(function(){
+        _alerts.create('Mensaje de prueba', 0);
+    });
 });

@@ -11,7 +11,8 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    background-color: rgb(204, 204, 204);
+    color: rgb(232, 232, 232);
+    background-color: rgb(42, 46, 49);
 }
 
 .web-version{
