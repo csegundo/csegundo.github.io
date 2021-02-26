@@ -1,0 +1,17 @@
+.main-div .who span,
+.main-div .social span{
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+}
+
+.main-div .who .list{
+    padding-left: 50px;
+}
+
+.main-div .social .twitter{
+
+}
+.main-div .social .twitter .timeline{
+    height: 200px;
+    overflow-y: visible;
+}

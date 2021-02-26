@@ -21,30 +21,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- FILES -->
-    <link rel="icon" href="public/resources/images/logo_512.svg">
-    <link rel="stylesheet" href="public/css/utils.css">
-    <link rel="stylesheet" href="public/css/index.css">
-    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="icon" href="../public/resources/images/logo_512.svg">
+    <link rel="stylesheet" href="../public/css/utils.css">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/9tp9.css">
     <!-- <script src="js/header.js"></script> -->
-    <script src="public/js/index.js"></script>
-    <script src="public/js/popup.js"></script>
-    <script src="public/js/alerts.js"></script>
+    <script src="../public/js/index.js"></script>
+    <script src="../public/js/popup.js"></script>
+    <script src="../public/js/alerts.js"></script>
 
-    <title>Home | csegundo</title>
+    <title>9TP9 | csegundo</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="https://csegundo.github.io"><img src="public/resources/images/logo_512.svg" class="navbar-logo"> csegundo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-            aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="https://csegundo.github.io"><img src="../public/resources/images/logo_512.svg" class="navbar-logo"> csegundo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-question" aria-hidden="true"></i> Sobre mí</a>
@@ -56,7 +56,7 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                         aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i> Herramientas</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="tools/encoders/">URL/Base64 encode-decode</a>
+                            <a class="dropdown-item" href="../tools/encoders/">URL/Base64 encode-decode</a>
                             <!-- <div class="dropdown-divider"></div> -->
                             <!-- <a class="dropdown-item" href="views/tools/base64encode.html">Base 64 encode-decode</a> -->
                         </div>
@@ -70,14 +70,40 @@
         </nav>
     </header>
 
-    <div class="alert alert-info" role="alert">Hola a todos! Esta web se encuentra actualmente en construcción!</div>
+    <div class="container main-div">
+        <div class="welcome text-center mt-20">
+            <h1>¡Bienvenidos a 9TP9!</h1>
+        </div>
 
-    <!-- <div class="web-version"></div> -->
+        <div class="separator"></div>
 
-    <button class="btn btn-primary bt-alert">Alerta aqui</button>
+        <div class="who">
+            <span>¿Quienes somos?</span>
+            <p class="mb-5">Somos un equipo competitivo de eSports formado por 10 integrantes especialistas en diferentes juegos:</p>
+            <ul class="list">
+                <li>CS:GO</li>
+                <li>Rocket League</li>
+                <li>FIFA</li>
+                <li>Chess online</li>
+            </ul>
+        </div>
 
-    <!-- <div class="slide-alert success">
-        asd as das d
-    </div> -->
+        <div class="separator"></div>
+
+        <div class="social">
+            <span>Nuestras redes sociales:</span>
+            <p>Estamos presentes en diferentes plataformas como Twitter y Twitch, donde hacemos directos de los juegos anteriormente mencionados. Puedes seguirnos en Twitter para no perderte ningún aviso importante, y en Twitch, donde nos podrás ver en directo e interactuar con nuestros integrantes.</p>
+            <div class="row twitter">
+                <div class="col timeline">
+                    <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/9TeamPontis9?ref_src=twsrc%5Etfw">Tweets by 9TeamPontis9</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+    
+                <div class="col buttons">
+                    <a href="https://twitter.com/9TeamPontis9?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @9TeamPontis9</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="https://twitter.com/intent/tweet?screen_name=9TeamPontis9&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="9TP9 eSports! #Somos9TP9" data-show-count="false">Tweet to @9TeamPontis9</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
