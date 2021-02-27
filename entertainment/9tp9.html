@@ -30,6 +30,7 @@
     <script src="../public/js/index.js"></script>
     <script src="../public/js/popup.js"></script>
     <script src="../public/js/alerts.js"></script>
+    <script src="../public/js/9tp9.js"></script>
 
     <title>9TP9 | csegundo</title>
 </head>
@@ -106,8 +107,8 @@
                     <a href="https://twitter.com/intent/tweet?screen_name=9TeamPontis9&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="9TP9 eSports! #Somos9TP9" data-show-count="false">Tweet to @9TeamPontis9</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     
                     <span class="mt-10">O algo personalizado...</span>
-                    <textarea class="form-control mt-5 fd-14" placeholder="Escribe el contenido del Tweet..."></textarea>
-                    <a class="btn btn-primary mt-10 fs-14 send-tweet" href="">Publicar Tweet <i class="fa fa-twitter"></i></a>
+                    <textarea class="form-control mt-5 fd-14" name="tweet-body" maxlength="26" placeholder="Escribe el contenido del Tweet..."></textarea>
+                    <a class="btn btn-primary mt-10 fs-14 send-tweet" href="javascript:void(0)">Publicar Tweet <i class="fa fa-twitter"></i></a>
                 </div>
             </div>
 
@@ -132,7 +133,9 @@
 
         <div class="separator"></div>
 
-
+        <div class="players">
+            <span>Nuestros jugadores</span>
+        </div>
     </div>
 </body>
 </html>
