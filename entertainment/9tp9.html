@@ -95,15 +95,44 @@
             <p>Estamos presentes en diferentes plataformas como Twitter y Twitch, donde hacemos directos de los juegos anteriormente mencionados. Puedes seguirnos en Twitter para no perderte ningún aviso importante, y en Twitch, donde nos podrás ver en directo e interactuar con nuestros integrantes.</p>
             <div class="row twitter">
                 <div class="col timeline">
-                    <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/9TeamPontis9?ref_src=twsrc%5Etfw">Tweets by 9TeamPontis9</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a class="twitter-timeline" height="500" data-theme="dark" href="https://twitter.com/9TeamPontis9?ref_src=twsrc%5Etfw">Tweets by 9TeamPontis9</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
     
                 <div class="col buttons">
+                    <span class="mb-5">Puedes seguirnos en Twitter haciendo click en el siguiente botón:</span>
                     <a href="https://twitter.com/9TeamPontis9?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @9TeamPontis9</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    
+                    <span class="mt-10 mb-5">¡Apoya a 9TP9!</span>
                     <a href="https://twitter.com/intent/tweet?screen_name=9TeamPontis9&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="9TP9 eSports! #Somos9TP9" data-show-count="false">Tweet to @9TeamPontis9</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    
+                    <span class="mt-10">O algo personalizado...</span>
+                    <textarea class="form-control mt-5 fd-14" placeholder="Escribe el contenido del Tweet..."></textarea>
+                    <a class="btn btn-primary mt-10 fs-14 send-tweet" href="">Publicar Tweet <i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="row twitch">
+                <div class="col">
+                    <!-- Add a placeholder for the Twitch embed -->
+                    <div id="twitch-embed"></div>
+                    <!-- Load the Twitch embed script -->
+                    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+                    <script type="text/javascript">
+                        new Twitch.Embed("twitch-embed", {
+                            width: 854,
+                            height: 480,
+                            channel: "9teampontis9",
+                            parent: [ "csegundo.github.io",]
+                        });
+                    </script>
                 </div>
             </div>
         </div>
+
+        <div class="separator"></div>
+
+
     </div>
 </body>
 </html>

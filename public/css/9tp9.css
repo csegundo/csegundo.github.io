@@ -8,10 +8,7 @@
     padding-left: 50px;
 }
 
-.main-div .social .twitter{
-
-}
-.main-div .social .twitter .timeline{
-    height: 200px;
-    overflow-y: visible;
+.main-div .social .twitter .buttons{
+    display: flex;
+    flex-direction: column;
 }
